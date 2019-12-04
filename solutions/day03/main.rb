@@ -1,6 +1,3 @@
-# Note: this version provides inaccurate results. For my case, sometimes the 
-# second best result was the actual result.
-
 W1, W2 = File.read('data.txt')
     .split("\n")
     .map{ |l| l.scan(/[RLUD]\d+/) }
@@ -11,7 +8,7 @@ class Map
         @m = {}
     end
 
-    def parse_arr arr
+    def parse_arr arr, name
         pt = [0, 0]
         steps_taken = 0
         arr.each do |i|
@@ -26,13 +23,11 @@ class Map
             when 'D'
                 [0, -1]
             end
-            # p [dir, steps]
             steps.times do
                 pt = pt.zip(dir).map(&:sum)
                 steps_taken += 1
-                last = @m.fetch(pt, {times: 0, steps: []})
-                last[:steps].push steps_taken
-                last[:times] += 1
+                last = @m.fetch(pt, {})
+                last[name] = last.fetch(name, steps_taken)
                 @m[pt] = last
             end
         end
@@ -40,12 +35,8 @@ class Map
 
     def part1
         sorted = @m.to_a
-            .select { |pt, c| c[:times] > 1 }
+            .select { |pt, c| c.keys.count > 1 }
             .sort_by { |pt, c| pt.map(&:abs).sum }
-
-        sorted.each do |x|
-            p x
-        end
 
         closest = sorted.first.first.map(&:abs).sum
         closest
@@ -53,19 +44,16 @@ class Map
 
     def part2
         sorted = @m.to_a
-            .select { |pt, c| c[:times] > 1 }
-            .sort_by { |pt, c| c[:steps].sum }
+            .select { |pt, c| c.keys.count > 1 }
+            .sort_by { |pt, c| c.map(&:last).sum }
 
-        sorted.each do |x|
-            p x
-        end
-
-        sorted.first.last[:steps].sum
+        sorted.first.last.map(&:last).sum
     end
 end
 
 m = Map.new
-m.parse_arr W1
-m.parse_arr W2
-p m.part1
-p m.part2
+m.parse_arr W1, :first
+m.parse_arr W2, :second
+
+puts 'Part 1: %s' % m.part1
+puts 'Part 2: %s' % m.part2
