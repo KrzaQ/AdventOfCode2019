@@ -8,11 +8,13 @@ I'm using various languages to provide solutions.
 | 01 | [The Tyranny of the Rocket Equation][day01] | [:heavy_check_mark:](solutions/day01/main.rb) |
 | 02 | [1202 Program Alarm][day02] | [:heavy_check_mark:](solutions/day02/main.rb) |
 | 03 | [Crossed Wires][day03] | [:heavy_check_mark:](solutions/day03/main.rb) |
+| 04 | [Secure Container][day04] | [:heavy_check_mark:](solutions/day04/main.rb) |
 
-[day01]: https://adventofcode.com/2018/day/1
-[day02]: https://adventofcode.com/2018/day/2
-[day03]: https://adventofcode.com/2018/day/3
+[day01]: https://adventofcode.com/2019/day/1
+[day02]: https://adventofcode.com/2019/day/2
+[day03]: https://adventofcode.com/2019/day/3
+[day04]: https://adventofcode.com/2019/day/4
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-03 16:56:18 +0100
+Readme generated on 2019-12-04 06:18:32 +0100

@@ -30,6 +30,16 @@
             }
         ]
     },
+    "day04": {
+        "desc": "Secure Container",
+        "path": "solutions/day04",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
