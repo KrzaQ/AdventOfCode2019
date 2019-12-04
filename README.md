@@ -1,4 +1,4 @@
-[Advent of Code 2018](https://adventofcode.com) solutions by [KrzaQ][kq]
+[Advent of Code 2019](https://adventofcode.com) solutions by [KrzaQ][kq]
 ========================
 
 I'm using various languages to provide solutions.
@@ -17,4 +17,4 @@ I'm using various languages to provide solutions.
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-04 06:18:32 +0100
+Readme generated on 2019-12-04 06:19:50 +0100
