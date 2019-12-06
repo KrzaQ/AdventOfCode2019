@@ -10,13 +10,15 @@ I'm using various languages to provide solutions.
 | 03 | [Crossed Wires][day03] | [:heavy_check_mark:](solutions/day03/main.rb) |
 | 04 | [Secure Container][day04] | [:heavy_check_mark:](solutions/day04/main.rb) |
 | 05 | [Sunny with a Chance of Asteroids][day05] | [:heavy_check_mark:](solutions/day05/main.rb) |
+| 06 | [Universal Orbit Map][day06] | [:heavy_check_mark:](solutions/day06/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
 [day03]: https://adventofcode.com/2019/day/3
 [day04]: https://adventofcode.com/2019/day/4
 [day05]: https://adventofcode.com/2019/day/5
+[day06]: https://adventofcode.com/2019/day/6
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-05 06:47:05 +0100
+Readme generated on 2019-12-06 06:22:18 +0100
