@@ -1,21 +1,18 @@
-DATA = File.read('data.txt').each_line.map{ |l| l.strip.split(')') }.map(&:reverse).to_h
+DATA = File.read('data.txt').each_line.map{ |l| l.strip.split(')').reverse }.to_h
 
 def orbits_of o
     ret = []
     loop do
         o = DATA[o]
-        if o
-            ret.push o
-        else
-            break
-        end
+        break unless o
+        ret.push o
     end
     ret.reverse
 end
 
 def p2
-    y = orbits_of('YOU')
-    s = orbits_of('SAN')
+    y = orbits_of 'YOU'
+    s = orbits_of 'SAN'
     while y.first == s.first
         y.shift
         s.shift
