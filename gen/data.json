@@ -70,6 +70,16 @@
             }
         ]
     },
+    "day08": {
+        "desc": "Space Image Format",
+        "path": "solutions/day08",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
