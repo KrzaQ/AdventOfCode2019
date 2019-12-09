@@ -80,6 +80,16 @@
             }
         ]
     },
+    "day09": {
+        "desc": "Sensor Boost",
+        "path": "solutions/day09",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
