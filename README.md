@@ -14,6 +14,7 @@ I'm using various languages to provide solutions.
 | 07 | [Amplification Circuit][day07] | [:heavy_check_mark:](solutions/day07/main.rb) |
 | 08 | [Space Image Format][day08] | [:heavy_check_mark:](solutions/day08/main.rb) |
 | 09 | [Sensor Boost][day09] | [:heavy_check_mark:](solutions/day09/main.rb) |
+| 10 | [Monitoring Station][day10] | [:heavy_check_mark:](solutions/day10/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -24,7 +25,8 @@ I'm using various languages to provide solutions.
 [day07]: https://adventofcode.com/2019/day/7
 [day08]: https://adventofcode.com/2019/day/8
 [day09]: https://adventofcode.com/2019/day/9
+[day10]: https://adventofcode.com/2019/day/10
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-09 06:42:14 +0100
+Readme generated on 2019-12-10 08:28:50 +0100

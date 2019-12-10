@@ -90,6 +90,16 @@
             }
         ]
     },
+    "day10": {
+        "desc": "Monitoring Station",
+        "path": "solutions/day10",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
