@@ -1,7 +1,6 @@
 DATA = File.read('data.txt').each_line.to_a
 ASTEROIDS = DATA.each_with_index.map do |line, y|
-	line
-        .each_char
+    line.each_char
         .each_with_index
         .select{ |c, _| c == '#' }
         .map{ |_, x| [x, y] }
@@ -15,23 +14,20 @@ end
 
 def colinear_same_side? a, b, point
     return false unless colinear? a, b, point
-
     [a, b, point].sort[1] != point
 end
 
 def count_visible_asteroids point
     visible = []
     ASTEROIDS.reject{ |a| a == point }.each do |a|
-        if visible.none? { |v| colinear_same_side? a, v, point }
-            visible.push a
-        end
+        visible.push a if visible.none? { |v| colinear_same_side? a, v, point }
     end
     visible.count
 end
 
 def angle a, b, c
     Math.atan2(c.last - a.last, c.first - a.first) -
-    Math.atan2(b.last - a.last, b.first - a.first);
+    Math.atan2(b.last - a.last, b.first - a.first)
 end
 
 def part1
@@ -56,7 +52,6 @@ def part2 point
         a = angle(point, [point.first, point.last - 1], v)
         a += Math::PI * 2
         a % (2 * Math::PI)
-        # a
     end
 
     sorted = visible
