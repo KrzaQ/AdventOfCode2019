@@ -16,6 +16,7 @@ I'm using various languages to provide solutions.
 | 09 | [Sensor Boost][day09] | [:heavy_check_mark:](solutions/day09/main.rb) |
 | 10 | [Monitoring Station][day10] | [:heavy_check_mark:](solutions/day10/main.rb) |
 | 11 | [Space Police][day11] | [:heavy_check_mark:](solutions/day11/main.rb) |
+| 12 | [The N-Body Problem][day12] | [:heavy_check_mark:](solutions/day12/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -28,7 +29,8 @@ I'm using various languages to provide solutions.
 [day09]: https://adventofcode.com/2019/day/9
 [day10]: https://adventofcode.com/2019/day/10
 [day11]: https://adventofcode.com/2019/day/11
+[day12]: https://adventofcode.com/2019/day/12
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-12 08:25:45 +0100
+Readme generated on 2019-12-12 08:28:38 +0100
