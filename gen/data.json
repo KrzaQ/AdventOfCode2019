@@ -100,6 +100,16 @@
             }
         ]
     },
+    "day11": {
+        "desc": "Space Police",
+        "path": "solutions/day11",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
