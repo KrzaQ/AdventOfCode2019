@@ -120,6 +120,16 @@
             }
         ]
     },
+    "day13": {
+        "desc": "Care Package",
+        "path": "solutions/day13",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
