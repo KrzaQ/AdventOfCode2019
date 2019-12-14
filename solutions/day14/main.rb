@@ -22,6 +22,7 @@ def round_up_mod_n val, mod
 end
 
 def calculate_requirements multiplier = 1
+    multiplier = multiplier.floor
     refs = DATA['FUEL'][:input]
         .map{ |_, m| count_refs m }
         .inject({}){ |t, n| t.merge(n){ |_, a, b| a + b } }
@@ -64,7 +65,7 @@ def part2
     (1..Float::INFINITY).bsearch do |n|
         req = calculate_requirements n
         req > 1000000000000
-    end.ceil - 1
+    end.to_i - 1
 end
 
 PART1 = calculate_requirements
