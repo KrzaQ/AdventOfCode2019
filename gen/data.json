@@ -130,6 +130,16 @@
             }
         ]
     },
+    "day14": {
+        "desc": "Space Stoichiometry",
+        "path": "solutions/day14",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
