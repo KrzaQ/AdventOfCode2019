@@ -7,20 +7,6 @@ DATA = File.read('data.txt')
     .to_h
     .freeze
 
-def calculate_requirements_separate material, amount = 1
-    return amount if material == 'ORE'
-
-    multiplier = amount
-    if DATA[material][:amount] != 1
-        multiplier = (amount + DATA[material][:amount] - 1) / DATA[material][:amount]
-    end
-
-    DATA[material][:input].map do |inputs|
-        count = inputs.first * multiplier
-        calculate_requirements inputs.last, count
-    end.sum
-end
-
 def count_refs root
     return {} if root == 'ORE'
 
