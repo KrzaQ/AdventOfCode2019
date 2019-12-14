@@ -86,6 +86,12 @@ class Cpu
         end
     end
 
+    def run
+        while not awaiting_input and not finished
+            execute_one
+        end
+    end
+
     def get_value val, mode
         case mode
         when '2'
