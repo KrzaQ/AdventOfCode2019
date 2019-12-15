@@ -9,6 +9,24 @@ class Cpu
         @rel_base = 0
     end
 
+    def state
+        self.instance_variables.map do |iv|
+            [iv, self.instance_variable_get(iv).clone]
+        end.to_h
+    end
+
+    def self.from_state s
+        c = Cpu.new []
+        s.each do |k, v|
+            c.instance_variable_set k, v.clone
+        end
+        c
+    end
+
+    def copy_self
+        Cpu.from_state state
+    end
+
     def write_input val
         @in.push val
     end
@@ -19,6 +37,12 @@ class Cpu
 
     def peek_last_output
         @out.last
+    end
+
+    def read_all_out
+        o = @out
+        @out = []
+        o
     end
 
     def awaiting_input
@@ -87,6 +111,7 @@ class Cpu
     end
 
     def run
+        execute_one unless finished
         while not awaiting_input and not finished
             execute_one
         end
