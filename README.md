@@ -20,6 +20,7 @@ I'm using various languages to provide solutions.
 | 13 | [Care Package][day13] | [:heavy_check_mark:](solutions/day13/main.rb) |
 | 14 | [Space Stoichiometry][day14] | [:heavy_check_mark:](solutions/day14/main.rb) |
 | 15 | [Oxygen System][day15] | [:heavy_check_mark:](solutions/day15/main.rb) |
+| 16 | [Flawed Frequency Transmission][day16] | [:heavy_check_mark:](solutions/day16/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -36,7 +37,8 @@ I'm using various languages to provide solutions.
 [day13]: https://adventofcode.com/2019/day/13
 [day14]: https://adventofcode.com/2019/day/14
 [day15]: https://adventofcode.com/2019/day/15
+[day16]: https://adventofcode.com/2019/day/16
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-15 07:03:53 +0100
+Readme generated on 2019-12-16 08:56:28 +0100
