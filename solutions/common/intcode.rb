@@ -31,6 +31,10 @@ class Cpu
         @in.push val
     end
 
+    def write_input_array arr
+        @in += arr
+    end
+
     def read_output
         @out.shift
     end
