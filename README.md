@@ -22,6 +22,7 @@ I'm using various languages to provide solutions.
 | 15 | [Oxygen System][day15] | [:heavy_check_mark:](solutions/day15/main.rb) |
 | 16 | [Flawed Frequency Transmission][day16] | [:heavy_check_mark:](solutions/day16/main.rb) |
 | 17 | [Set and Forget][day17] | [:heavy_check_mark:](solutions/day17/main.rb) |
+| 18 | [Many-Worlds Interpretation][day18] | [:heavy_check_mark:](solutions/day18/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -40,7 +41,8 @@ I'm using various languages to provide solutions.
 [day15]: https://adventofcode.com/2019/day/15
 [day16]: https://adventofcode.com/2019/day/16
 [day17]: https://adventofcode.com/2019/day/17
+[day18]: https://adventofcode.com/2019/day/18
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-17 07:17:04 +0100
+Readme generated on 2019-12-18 08:07:03 +0100

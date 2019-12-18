@@ -170,6 +170,16 @@
             }
         ]
     },
+    "day18": {
+        "desc": "Many-Worlds Interpretation",
+        "path": "solutions/day18",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
