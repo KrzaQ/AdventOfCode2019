@@ -11,10 +11,6 @@ end
 def sum_arr a, b
     a.zip(b).map{ |s| s.reduce(:+) }
 end
-# p lines.size
-# p lines[0].size
-
-# p p1
 
 def part1
     c = Cpu.new INST
