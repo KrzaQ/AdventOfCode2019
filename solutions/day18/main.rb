@@ -32,7 +32,6 @@ def find_available data, from_pos, has_keys = []
                 next unless c
                 traversed[new_point] = dist
                 if c =~ /[a-z]/
-
                     keys[c] = {
                         pos: new_point,
                         dist: dist,
@@ -58,12 +57,11 @@ def find_available data, from_pos, has_keys = []
     keys
 end
 
-def dijkstraish data, from_pos, has_keys = []
+def dijkstra data, from_pos, has_keys = []
     paths = [
         { keys: has_keys, pos: from_pos, dist: 0 }
     ]
     seen = Set.new
-
     loop do
         paths = paths.sort_by{ |x| x[:dist] }.reject do |path|
             seen.include? [path[:keys].sort.join, path[:pos]]
@@ -92,7 +90,7 @@ def dijkstraish data, from_pos, has_keys = []
 end
 
 def part1
-    dijkstraish(DATA, [INTIAL_POS])[:dist]
+    dijkstra(DATA, [INTIAL_POS])[:dist]
 end
 
 def part2
@@ -111,7 +109,7 @@ def part2
         sum_arr INTIAL_POS, pos
     end
 
-    dijkstraish(d, positions)[:dist]
+    dijkstra(d, positions)[:dist]
 end
 
 PART1 = part1
