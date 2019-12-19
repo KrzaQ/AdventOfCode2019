@@ -23,6 +23,7 @@ I'm using various languages to provide solutions.
 | 16 | [Flawed Frequency Transmission][day16] | [:heavy_check_mark:](solutions/day16/main.rb) |
 | 17 | [Set and Forget][day17] | [:heavy_check_mark:](solutions/day17/main.rb) |
 | 18 | [Many-Worlds Interpretation][day18] | [:heavy_check_mark:](solutions/day18/main.rb) |
+| 19 | [Tractor Beam][day19] | [:heavy_check_mark:](solutions/day19/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -42,7 +43,8 @@ I'm using various languages to provide solutions.
 [day16]: https://adventofcode.com/2019/day/16
 [day17]: https://adventofcode.com/2019/day/17
 [day18]: https://adventofcode.com/2019/day/18
+[day19]: https://adventofcode.com/2019/day/19
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-18 08:07:03 +0100
+Readme generated on 2019-12-19 06:58:19 +0100

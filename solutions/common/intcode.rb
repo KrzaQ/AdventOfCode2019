@@ -127,14 +127,16 @@ class Cpu
             if @rel_base + val > @i.size
                 @i += [0] * (@rel_base + val - @i.size + 1)
             end
-            @i[@rel_base + val]
+            r = @i[@rel_base + val]
+            r ? r : 0
         when '1'
             val
         when '0'
             if val > @i.size
                 @i += [0] * (val - @i.size + 1)
             end
-            @i[val]
+            r = @i[val]
+            r ? r : 0
         end
     end
 
