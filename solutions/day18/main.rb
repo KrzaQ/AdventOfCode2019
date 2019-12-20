@@ -15,6 +15,8 @@ INTIAL_POS = DATA.each_with_index.map do |l, y|
     l.each_char.each_with_index.select{ |c, x| c == '@' }.map{ |c, x| [x, y] }
 end.flatten
 
+NUMBER_OF_KEYS = DATA.join.scan(/[a-z]/).size
+
 DIRECTIONS = [[-1,0], [0, 1], [1, 0], [0, -1]]
 
 def find_available data, from_pos, has_keys = []
@@ -57,34 +59,40 @@ def find_available data, from_pos, has_keys = []
     keys
 end
 
-def dijkstra data, from_pos, has_keys = []
+def dijkstra data, from_pos, has_keys = ""
     paths = [
         { keys: has_keys, pos: from_pos, dist: 0 }
     ]
     seen = Set.new
     loop do
         paths = paths.sort_by{ |x| x[:dist] }.reject do |path|
-            seen.include? [path[:keys].sort.join, path[:pos]]
+            seen.include? [path[:keys].chars.sort.join, path[:pos]]
         end
         this = paths.shift
-        seen.add [this[:keys].sort.join, this[:pos]]
         available = this[:pos].map do |pos|
-            find_available(data, pos, this[:keys].sort).map do |av|
+            find_available(data, pos, this[:keys].chars.sort).map do |av|
                 [pos, av]
             end
         end.flatten(1)
         to_add = available.reject do |a|
-            this[:keys].include? a.last.first
+            this[:keys].chars.include? a.last.first
         end.map do |pos, kv|
             k, v = *kv
             np = this[:pos].reject{ |x| x == pos } + [v[:pos]]
             {
-                keys: this[:keys] + [k],
+                keys: this[:keys] + k,
                 pos: np.sort,
                 dist: this[:dist] + v[:dist],
             }
+        end.reject do |path|
+            seen.include? [path[:keys].chars.sort.join, path[:pos]]
         end
-        return this if to_add.size == 0
+        seen.add [this[:keys].chars.sort.join, this[:pos]]
+        # puts "Current: %-27s. Dist: %5s. Seen: %5s. Todo: %5s" % [
+        #     this[:keys], this[:dist], seen.size, paths.size
+        # ]
+        # return this if to_add.size == 0
+        return this if this[:keys].size == NUMBER_OF_KEYS
         paths += to_add
     end
 end
@@ -113,6 +121,6 @@ def part2
 end
 
 PART1 = part1
-PART2 = part2
 puts 'Part 1: %s' % PART1
+PART2 = part2
 puts 'Part 2: %s' % PART2
