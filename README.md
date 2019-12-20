@@ -24,6 +24,7 @@ I'm using various languages to provide solutions.
 | 17 | [Set and Forget][day17] | [:heavy_check_mark:](solutions/day17/main.rb) |
 | 18 | [Many-Worlds Interpretation][day18] | [:heavy_check_mark:](solutions/day18/main.rb) |
 | 19 | [Tractor Beam][day19] | [:heavy_check_mark:](solutions/day19/main.rb) |
+| 20 | [Donut Maze][day20] | [:heavy_check_mark:](solutions/day20/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -44,7 +45,8 @@ I'm using various languages to provide solutions.
 [day17]: https://adventofcode.com/2019/day/17
 [day18]: https://adventofcode.com/2019/day/18
 [day19]: https://adventofcode.com/2019/day/19
+[day20]: https://adventofcode.com/2019/day/20
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-19 06:58:19 +0100
+Readme generated on 2019-12-20 07:33:21 +0100
