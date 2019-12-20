@@ -67,7 +67,7 @@ PORTALS = DATA.size.times.map do |y|
     .flatten(1)
     .to_h
 
-def find_neighbours_with_depth x, y, d
+def find_neighbours_with_depth x, y, d, can_do_negative_depth
     DIRECTIONS.map do |dx, dy|
         nx, ny = sum_arr [x, y], [dx, dy]
         portal = find_portal(nx, ny)
@@ -78,11 +78,11 @@ def find_neighbours_with_depth x, y, d
         end
         [nx, ny, nd]
     end.select do |x, y, d|
-        d >= 0 and get_arr_xy(DATA, x, y) == '.'
+        (d >= 0 or can_do_negative_depth) and get_arr_xy(DATA, x, y) == '.'
     end
 end
 
-def dijkstra initial, win_condition
+def dijkstra initial, win_condition, can_do_negative_depth = true
     unknown = [ { xy: initial, dist: 0, depth: 0 } ]
     checked = Set.new
     loop do
@@ -90,7 +90,8 @@ def dijkstra initial, win_condition
             .sort_by{ |x| x[:dist] }
             .reject{ |x| checked.include? [x[:xy], x[:depth]] }
         this = unknown.shift
-        available = find_neighbours_with_depth *this[:xy], this[:depth]
+        params = [ *this[:xy], this[:depth], can_do_negative_depth ]
+        available = find_neighbours_with_depth *params
         available.reject do |x, y, depth|
             checked.include? [[x, y], depth]
         end.each do |x, y, depth|
@@ -119,7 +120,7 @@ end
 
 def part2
     win = lambda { |node| node[:xy] == ZZ and node[:depth] == 0 }
-    dijkstra(AA, win)[:dist]
+    dijkstra(AA, win, false)[:dist]
 end
 
 PART1 = part1
