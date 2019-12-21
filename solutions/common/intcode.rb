@@ -35,6 +35,10 @@ class Cpu
         @in += arr
     end
 
+    def write_string str
+        @in += str.chars.map(&:ord)
+    end
+
     def read_output
         @out.shift
     end
