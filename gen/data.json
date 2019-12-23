@@ -220,6 +220,16 @@
             }
         ]
     },
+    "day23": {
+        "desc": "Category Six",
+        "path": "solutions/day23",
+        "solutions": [
+            {
+                "language": "Ruby",
+                "path": "main.rb"
+            }
+        ]
+    },
     "ordering": [
         "Ruby"
     ]
