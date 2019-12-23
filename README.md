@@ -26,6 +26,7 @@ I'm using various languages to provide solutions.
 | 19 | [Tractor Beam][day19] | [:heavy_check_mark:](solutions/day19/main.rb) |
 | 20 | [Donut Maze][day20] | [:heavy_check_mark:](solutions/day20/main.rb) |
 | 21 | [Springdroid Adventure][day21] | [:heavy_check_mark:](solutions/day21/main.rb) |
+| 22 | [Slam Shuffle][day22] | [:heavy_check_mark:](solutions/day22/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -48,7 +49,8 @@ I'm using various languages to provide solutions.
 [day19]: https://adventofcode.com/2019/day/19
 [day20]: https://adventofcode.com/2019/day/20
 [day21]: https://adventofcode.com/2019/day/21
+[day22]: https://adventofcode.com/2019/day/22
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-21 06:38:07 +0100
+Readme generated on 2019-12-23 06:36:54 +0100
