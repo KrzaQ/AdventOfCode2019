@@ -28,6 +28,7 @@ I'm using various languages to provide solutions.
 | 21 | [Springdroid Adventure][day21] | [:heavy_check_mark:](solutions/day21/main.rb) |
 | 22 | [Slam Shuffle][day22] | [:heavy_check_mark:](solutions/day22/main.rb) |
 | 23 | [Category Six][day23] | [:heavy_check_mark:](solutions/day23/main.rb) |
+| 24 | [Planet of Discord][day24] | [:heavy_check_mark:](solutions/day24/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -52,7 +53,8 @@ I'm using various languages to provide solutions.
 [day21]: https://adventofcode.com/2019/day/21
 [day22]: https://adventofcode.com/2019/day/22
 [day23]: https://adventofcode.com/2019/day/23
+[day24]: https://adventofcode.com/2019/day/24
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-23 06:38:24 +0100
+Readme generated on 2019-12-24 07:11:20 +0100
