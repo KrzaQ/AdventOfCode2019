@@ -7,3 +7,7 @@
 *.md text
 *.rb text
 
+*.jpg binary
+*.png binary
+*.ods binary
+

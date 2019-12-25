@@ -29,6 +29,7 @@ I'm using various languages to provide solutions.
 | 22 | [Slam Shuffle][day22] | [:heavy_check_mark:](solutions/day22/main.rb) |
 | 23 | [Category Six][day23] | [:heavy_check_mark:](solutions/day23/main.rb) |
 | 24 | [Planet of Discord][day24] | [:heavy_check_mark:](solutions/day24/main.rb) |
+| 25 | [Cryostasis][day25] | [:heavy_check_mark:](solutions/day25/main.rb) |
 
 [day01]: https://adventofcode.com/2019/day/1
 [day02]: https://adventofcode.com/2019/day/2
@@ -54,7 +55,8 @@ I'm using various languages to provide solutions.
 [day22]: https://adventofcode.com/2019/day/22
 [day23]: https://adventofcode.com/2019/day/23
 [day24]: https://adventofcode.com/2019/day/24
+[day25]: https://adventofcode.com/2019/day/25
 
 [kq]: https://dev.krzaq.cc
 
-Readme generated on 2019-12-24 07:11:20 +0100
+Readme generated on 2019-12-25 07:24:33 +0100
